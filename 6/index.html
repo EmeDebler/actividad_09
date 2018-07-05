@@ -27,6 +27,21 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
     <title></title>
   </head>
   <body>
+  	<div><img src="https://i.pinimg.com/736x/43/da/ab/43daab5137418716714726cb71332f80--cardboard-robot-cardboard-boxes.jpg" alt="imagen de prueba">
+    </div>
 
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script>
+   	document.oncontextmenu=function(){return false}
+   
+   $("div").mousedown(function(event) {
+    switch (event.which) {
+        case 3:
+            alert("imágenes con derecho de autor, no es posible la descarga sin consentimiento del autor");
+            break;
+        }
+   });
+  </script>
   </body>
+
 </html>
